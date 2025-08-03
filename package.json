@@ -48,3 +48,21 @@
     "node": ">=18.0.0"
   }
 }
+{
+  "name": "shopify-oxygen-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "oxygen dev",
+    "build": "oxygen build",
+    "preview": "oxygen preview"
+  },
+  "dependencies": {
+    "@shopify/mini-oxygen": "^3.2.1",
+    "@shopify/hydrogen": "^2024.1.0",
+    "vite": "^6.3.5"
+  },
+  "engines": {
+    "node": ">=18.17.1"
+  }
+}
