@@ -42,27 +42,46 @@ npm run dev
 
 ## Setup for using Customer Account API (`/account` section)
 
-Follow step 1 and 2 of <https://shopify.dev/docs/custom-storefronts/building-with-the-customer-account-api/hydrogen#step-1-set-up-a-public-domain-for-local-development>
-# La ligne 25 – Hydrogen Storefront
+# 🚇 La ligne 25 – Shopify Hydrogen Storefront
 
-Bienvenue sur le dépôt du storefront *La ligne 25*, développé avec Shopify Hydrogen.  
-Notre mission : tracer une ligne vers une mode plus responsable, à chaque étape du parcours client.
+Bienvenue sur le dépôt du site *La ligne 25*, une boutique en ligne pensée comme une ligne de métro imaginaire, où chaque station est une rencontre, chaque produit une évocation.
+
+---
+
+## 🧶 L’univers de la marque
+
+> “Chaque station a son récit. La vôtre commence ici.”
+
+*La ligne 25* est une ligne textile poétique fondée par Gena Campbell. À rebours des clichés touristiques, elle explore les marges parisiennes à travers des sacs et accessoires aux noms évocateurs : Bagatelle, Chardon-Lagache, Abbesses, Saint-Georges…
+
+---
 
 ## 🛠️ Technologies utilisées
 
 - [Hydrogen](https://shopify.dev/docs/custom-storefronts/hydrogen)
-- Remix
+- [Remix](https://remix.run/)
 - Vite
 - TypeScript
-- SEO automatisé avec microservice personnalisé
+- Microservice SEO (Blackbird Tags)
+- Hébergement Shopify / Render
 
-## 🚇 L’identité *La ligne 25*
+---
 
-Une marque comme une ligne urbaine. Chaque produit est une station, chaque client est un passager engagé.  
-Découvrez nos visuels, nos valeurs, et l’histoire que nous écrivons à chaque commit.
+## 🖼️ Fonctions clés
 
-## 📦 Installation locale
+- Génération dynamique des balises meta (OG/Twitter) pour le SEO
+- Intégration d’un client `SEOServiceClient.ts` vers `blackbird-tags.onrender.com`
+- Design inspiré du métro parisien : lignes, typographie, signalétique
+- Structure modulaire (routes Remix, composants réutilisables)
+- Déploiement rapide via Oxygen / Render
+
+---
+
+## 📦 Installation
 
 ```bash
+git clone https://github.com/Gena03000/la-ligne-25-hydrogen.git
+cd la-ligne-25-hydrogen
 npm install
 npm run dev
+
