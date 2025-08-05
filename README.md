@@ -43,3 +43,26 @@ npm run dev
 ## Setup for using Customer Account API (`/account` section)
 
 Follow step 1 and 2 of <https://shopify.dev/docs/custom-storefronts/building-with-the-customer-account-api/hydrogen#step-1-set-up-a-public-domain-for-local-development>
+# La ligne 25 – Hydrogen Storefront
+
+Bienvenue sur le dépôt du storefront *La ligne 25*, développé avec Shopify Hydrogen.  
+Notre mission : tracer une ligne vers une mode plus responsable, à chaque étape du parcours client.
+
+## 🛠️ Technologies utilisées
+
+- [Hydrogen](https://shopify.dev/docs/custom-storefronts/hydrogen)
+- Remix
+- Vite
+- TypeScript
+- SEO automatisé avec microservice personnalisé
+
+## 🚇 L’identité *La ligne 25*
+
+Une marque comme une ligne urbaine. Chaque produit est une station, chaque client est un passager engagé.  
+Découvrez nos visuels, nos valeurs, et l’histoire que nous écrivons à chaque commit.
+
+## 📦 Installation locale
+
+```bash
+npm install
+npm run dev
