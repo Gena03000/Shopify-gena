@@ -17,3 +17,22 @@
     "./**/*.jsx"
   ]
 }
+{
+  "title": "Sac {{station}} – {{qualité}}, {{style}}",
+  "description": "Découvrez notre modèle {{nom}} inspiré de la station {{station}}. Un accessoire {{style}} pensé pour les âmes urbaines. Confectionné en {{matière}}, idéal pour vos voyages en ville. Livraison offerte.",
+  "link": "https://genacampbell.shop/products/{{handle}}",
+  "image_link": "https://genacampbell.shop/images/{{handle}}.jpg",
+  "availability": "in stock",
+  "price": "{{prix}} EUR",
+  "brand": "La ligne 25",
+  "google_product_category": "Fashion > Bags > Handbags",
+  "custom_label_0": "{{collection}}",
+  "custom_label_1": "{{style}}",
+  "custom_label_2": "Paris Métro Chic"
+}
+{
+  "title": "Sac Saint-Georges – Élégant, urbain",
+  "description": "Découvrez notre modèle Saint-Georges inspiré de la station éponyme. Un accessoire poétique pensé pour les âmes urbaines. Confectionné en faux cuir, idéal pour vos voyages en ville. Livraison offerte.",
+  "link": "https://genacampbell.shop/products/saint-georges",
+  ...
+}
