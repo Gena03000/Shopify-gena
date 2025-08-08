@@ -1,6 +1,8 @@
 # Don't change the line below!
 #! oxygen_storefront_id: 1000018067
+
 name: Storefront 1000018067
+
 on: [push]
 
 permissions:
@@ -12,16 +14,18 @@ jobs:
     name: Deploy to Oxygen
     timeout-minutes: 30
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
 
-      - name: Setup node.js
+    steps:
+      - name: 📥 Checkout du code
+        uses: actions/checkout@v4
+
+      - name: 🛠️ Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "lts/*"
           check-latest: true
 
-      - name: Cache node modules
+      - name: 📦 Cache node modules
         id: cache-npm
         uses: actions/cache@v4
         env:
@@ -34,20 +38,12 @@ jobs:
             ${{ runner.os }}-build-
             ${{ runner.os }}-
 
-      - name: Install dependencies
+      - name: 📚 Install dependencies
         run: npm ci
 
-      - name: Build and Publish to Oxygen
+      - name: 🚀 Build and Publish to Oxygen
         run: npx shopify hydrogen deploy
         env:
           SHOPIFY_HYDROGEN_DEPLOYMENT_TOKEN: ${{ secrets.OXYGEN_DEPLOYMENT_TOKEN_1000018067 }}
-          steps:
- 
-- name: Cache node_modules
-  uses: actions/cache@v4
-  with:
-    path: ~/.npm
-    key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-    restore-keys: |
-      ${{ runner.os }}-node-
+
 
